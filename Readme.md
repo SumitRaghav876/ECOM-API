@@ -17,30 +17,37 @@
 - Utilities: `uuid` for unique identifiers(id), `dotenv` for environment security.
 
 📂 Project Structure
+```text
 src/
 ├── config/       Database and Environment configurations
 ├── controllers/  Business logic (Products, Cart, Orders)
 ├── models/       Mongoose Schemas (Product, Cart, Order)
 ├── routes/       Express Route definitions
 └── server.js     Application entry/starting point
+```
 
 📡 API Endpoints
-	Method				Endpoint				Description
-	GET					/products				Returns a list of all products in the database.
-	POST				/cart/add				Adds a product to the cart. Requires productId and quantity in body.
-	POST				/orders					Processes checkout, validates stock, and generates a unique Order ID.
+	| Method | Endpoint | Description |
+	| :--- | :--- | :--- |
+	| GET | `/products` |Returns a list of all products in the database.|
+	| POST | `/cart/add` |Adds a product to the cart. Requires productId and quantity in body.|
+	| POST | `/orders` |Processes checkout, validates stock, and generates a unique Order ID.|
 
 ⚙️ Setup & Installation
 1. Clone the repository
 
 2. Install Dependencies:
+	```bash
 	npm install
 
-3. Environment Variables: Create a .env file in the root and add:
+3. Environment Variables: Create a `.env` file in the root and add:
+	```bash
 	PORT=3000
 	MONGO_URI=your_mongodb_connection_string
 
-4. Add Data: Run your add.js script to add data in the database.
+4. Add Data: Run your `add.js` script to add data in the database.
+	```bash
 	node add.js
 5.Start Server:
+```bash
 	npm start
