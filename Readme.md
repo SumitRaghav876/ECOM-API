@@ -29,11 +29,12 @@ src/
 ```
 
 📡 API Endpoints
+
 	| Method | Endpoint | Description |
 	| :--- | :--- | :--- |
-	| GET | `/products` |Returns a list of all products in the database.|
-	| POST | `/cart/add` |Adds a product to the cart. Requires productId and quantity in body.|
-	| POST | `/orders` |Processes checkout, validates stock, and generates a unique Order ID.|
+	| GET | `/products` | Returns a list of all products in the database. |
+	| POST | `/cart/add` | Adds a product to the cart. Requires `productId` and `quantity`. |
+	| POST | `/orders` | Processes checkout, validates stock, and generates a unique Order ID. |
 
 ⚙️ Setup & Installation
 1. Clone the repository
