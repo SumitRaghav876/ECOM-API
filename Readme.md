@@ -24,17 +24,23 @@ src/
 ├── routes/       Express Route definitions
 └── server.js     Application entry/starting point
 
-⚙️ Setup & Installation
-Clone the repository
+📡 API Endpoints
+	Method				Endpoint				Description
+	GET					/products				Returns a list of all products in the database.
+	POST				/cart/add				Adds a product to the cart. Requires productId and quantity in body.
+	POST				/orders					Processes checkout, validates stock, and generates a unique Order ID.
 
-Install Dependencies:
+⚙️ Setup & Installation
+1. Clone the repository
+
+2. Install Dependencies:
 	npm install
 
-Environment Variables: Create a .env file in the root and add:
+3. Environment Variables: Create a .env file in the root and add:
 	PORT=3000
 	MONGO_URI=your_mongodb_connection_string
 
-Add Data: Run your add.js script to add data in the database.
-
-Start Server:
+4. Add Data: Run your add.js script to add data in the database.
+	node add.js
+5.Start Server:
 	npm start
